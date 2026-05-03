@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import NextTopLoader from 'nextjs-toploader';
 import React from 'react';
 
@@ -152,6 +153,7 @@ export default async function RootLayout({
             </DownloadManagerProvider>
           </ThemeProvider>
         </GlobalCacheProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
