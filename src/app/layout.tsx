@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
@@ -152,6 +153,7 @@ export default async function RootLayout({
             </DownloadManagerProvider>
           </ThemeProvider>
         </GlobalCacheProvider>
+        <Analytics />
       </body>
     </html>
   );
